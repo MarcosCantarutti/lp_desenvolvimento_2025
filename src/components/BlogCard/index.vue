@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="p-4 bg-white shadow-lg rounded-lg flex flex-col space-y-4 p-10 m-12"
-  >
+  <div class="bg-white shadow-lg rounded-lg flex flex-col space-y-4 p-10 m-12">
     <!-- Imagem do Blog -->
     <img
       v-if="image"
