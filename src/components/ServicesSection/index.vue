@@ -59,5 +59,5 @@
 </template>
 
 <script setup lang="ts">
-import ServicesCard from '@/components/ServicesCard/index.vue';
+import ServicesCard from '../../components/ServicesCard/index.vue';
 </script>

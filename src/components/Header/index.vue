@@ -121,6 +121,10 @@ const toggleMenu = (): void => {
   menuOpen.value = !menuOpen.value;
 };
 
+const closeMenu = () => {
+  return '';
+};
+
 const scrollToSection = (sectionId: string): void => {
   const section = document.getElementById(sectionId);
   if (section) {

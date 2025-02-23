@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import BlogCard from '@/components/BlogCard/index.vue';
+import BlogCard from '../../components/BlogCard/index.vue';
 
 const blogs = [
   {
