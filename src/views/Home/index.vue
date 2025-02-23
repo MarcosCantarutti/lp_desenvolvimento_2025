@@ -8,12 +8,11 @@ import ContactForm from '@/components/ContactForm/index.vue';
 </script>
 
 <template>
-  hi
-  <!-- <DefaultLayout>
+  <DefaultLayout>
     <HeroSection />
     <AboutSection />
     <ServicesSection />
     <BlogSection />
     <ContactForm />
-  </DefaultLayout> -->
+  </DefaultLayout>
 </template>
