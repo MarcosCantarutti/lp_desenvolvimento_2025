@@ -1,33 +1,27 @@
 {
-  "name": "lpdesenvolvimento_2025",
-  "version": "0.0.0",
+  "name": "LP_DESENVOLVIMENTO",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.2.0",
-    "@tailwindcss/vite": "^4.0.8",
-    "lpdesenvolvimento_2025": "file:",
+    "LP_DESENVOLVIMENTO": "file:",
     "pinia": "^3.0.1",
-    "tailwindcss": "^4.0.8",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@tsconfig/node22": "^22.0.0",
-    "@types/node": "^22.13.4",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
-    "npm-run-all2": "^7.0.2",
-    "typescript": "~5.7.3",
-    "vite": "^6.1.1",
-    "vite-plugin-vue-devtools": "^7.7.2",
-    "vue-tsc": "^2.2.2"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.8",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vue-tsc": "^2.2.0"
   }
 }
