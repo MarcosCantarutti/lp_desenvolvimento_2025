@@ -35,7 +35,7 @@ const ChatSidebar = ({
       <div className="p-2 space-y-2 border-b border-gray-200 bg-white flex-shrink-0">
         <button
           onClick={onNewConversation}
-          className="w-full flex items-center justify-center gap-2 text-sm font-semibold p-2 rounded-lg bg-primary text-white hover:bg-purple-700 transition-colors"
+          className="w-full flex items-center justify-center gap-2 text-sm font-semibold p-2 rounded-lg bg-primary text-white hover:bg-blue-700 transition-colors"
         >
           <FaPlus size={12} />
           Percakapan Baru

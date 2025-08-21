@@ -60,7 +60,7 @@ const ChatBody = ({ chatHistory, isLoading, chatEndRef, onFeedback }) => {
                   className={`py-2 px-3 rounded-xl max-w-md break-words mb-1 
                 ${
                   msg.sender === "user"
-                    ? "bg-gradient-to-br from-primary to-purple-700 text-white"
+                    ? "bg-gradient-to-br from-primary to-blue-700 text-white"
                     : "bg-white text-secondary"
                 }`}
                 >

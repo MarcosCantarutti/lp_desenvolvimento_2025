@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const icons = {
   FaCode: <FaCode className="text-blue-500" />,
   FaPython: <FaPython className="text-green-500" />,
-  FaCloud: <FaCloud className="text-purple-500" />,
+  FaCloud: <FaCloud className="text-blue-500" />,
   FaBook: <FaBook className="text-orange-500" />,
 };
 

@@ -13,33 +13,33 @@ import { motion } from "framer-motion";
 const StatsSection = () => {
   const stats = [
     {
-      icon: <FaProjectDiagram className="w-8 h-8 text-purple-300" />,
+      icon: <FaProjectDiagram className="w-8 h-8 text-blue-300" />,
       value: 300,
       label: "alguma coisa",
     },
     {
-      icon: <FaUsers className="w-8 h-8 text-purple-300" />,
+      icon: <FaUsers className="w-8 h-8 text-blue-300" />,
       value: 5,
        label: "alguma coisa",
     },
     {
-      icon: <FaSmile className="w-8 h-8 text-purple-300" />,
+      icon: <FaSmile className="w-8 h-8 text-blue-300" />,
       value: 95,
        label: "alguma coisa",
       suffix: "%",
     },
     {
-      icon: <FaCode className="w-8 h-8 text-purple-300" />,
+      icon: <FaCode className="w-8 h-8 text-blue-300" />,
       value: 1000,
        label: "alguma coisa",
     },
     {
-      icon: <FaChalkboardTeacher className="w-8 h-8 text-purple-300" />,
+      icon: <FaChalkboardTeacher className="w-8 h-8 text-blue-300" />,
       value: 20,
        label: "alguma coisa",
     },
     {
-      icon: <FaLaptopCode className="w-8 h-8 text-purple-300" />,
+      icon: <FaLaptopCode className="w-8 h-8 text-blue-300" />,
       value: 50,
        label: "alguma coisa",
     },
@@ -69,11 +69,11 @@ const StatsSection = () => {
       {/* --- Background Layered Effect --- */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
         <div
           className="absolute inset-0 bg-repeat"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239038FF' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231D4ED8' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         ></div>
       </div>
@@ -83,7 +83,7 @@ const StatsSection = () => {
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
             Confira nossos números
           </h2>
-          <p className="mt-4 text-lg text-purple-300">
+          <p className="mt-4 text-lg text-blue-300">
             olha como somos legais
           </p>
         </div>
@@ -103,7 +103,7 @@ const StatsSection = () => {
                 <AnimatedCounter value={stat.value} />
                 {stat.suffix || "+"}
               </h3>
-              <p className="mt-2 text-purple-200">{stat.label}</p>
+              <p className="mt-2 text-blue-200">{stat.label}</p>
             </motion.div>
           ))}
         </div>

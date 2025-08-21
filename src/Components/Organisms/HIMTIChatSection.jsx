@@ -47,11 +47,11 @@ const HIMTIChatSection = () => {
       {/* --- Background Layered Effect --- */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
         <div
           className="absolute inset-0 bg-repeat"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239038FF' fill-opacity='0.1'%3E%3Cpath d='M0 0h80v2H0zM0 40h80v2H0z' transform='rotate(45 40 40)'/%3E%3C/g%3E%3Cg fill='%239038FF' fill-opacity='0.2'%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231D4ED8' fill-opacity='0.1'%3E%3Cpath d='M0 0h80v2H0zM0 40h80v2H0z' transform='rotate(45 40 40)'/%3E%3C/g%3E%3Cg fill='%231D4ED8' fill-opacity='0.2'%3E%3Ccircle cx='40' cy='40' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         ></div>
       </div>
@@ -72,7 +72,7 @@ const HIMTIChatSection = () => {
                 Sobre nós
                 
               </h2>
-              <p className="mt-4 text-lg text-purple-100">
+              <p className="mt-4 text-lg text-blue-100">
                 somos muito legais, olha só
               </p>
               <div className="mt-8 text-left space-y-4">
@@ -83,12 +83,12 @@ const HIMTIChatSection = () => {
                     whileHover={{ scale: 1.03 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 bg-purple-300/20 rounded-full flex items-center justify-center">
-                      <FaCheckCircle className="text-purple-300" />
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-300/20 rounded-full flex items-center justify-center">
+                      <FaCheckCircle className="text-blue-300" />
                     </div>
                     <div>
                       <h3 className="font-bold text-white">{feature.title}</h3>
-                      <p className="text-sm text-purple-200">
+                      <p className="text-sm text-blue-200">
                         {feature.description}
                       </p>
                     </div>

@@ -30,4 +30,16 @@
   .animate-fade-in-down {
     animation: fade-in-down 0.8s ease-out forwards;
   }
+
+  .text-primary{
+    color: #1D4ED8;
+  }
+
+  .bg-primary{
+    background-color: #1D4ED8;
+  }
+
+  .border-primary{
+    color: #1D4ED8;
+  }
 }

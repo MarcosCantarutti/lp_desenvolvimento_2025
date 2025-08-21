@@ -55,7 +55,7 @@ const FeedbackPopup = ({ onSubmit, onCancel }) => {
           <button
             onClick={handleSubmit}
             disabled={!reason}
-            className="px-4 py-2 bg-primary text-white font-bold rounded-lg hover:bg-purple-700 disabled:bg-gray-400"
+            className="px-4 py-2 bg-primary text-white font-bold rounded-lg hover:bg-blue-700 disabled:bg-gray-400"
           >
             Kirim Masukan
           </button>

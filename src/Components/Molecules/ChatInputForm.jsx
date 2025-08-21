@@ -103,7 +103,7 @@ const ChatInputForm = ({ onSubmit, isLoading }) => {
       <button
         type="submit"
         disabled={isLoading || !prompt.trim()}
-        className="p-3 bg-primary text-white font-bold rounded-lg hover:bg-purple-700 disabled:bg-gray-400 transition-colors self-stretch flex items-center"
+        className="p-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-700 disabled:bg-gray-400 transition-colors self-stretch flex items-center"
         aria-label="Kirim Pesan"
       >
         <FaPaperPlane />

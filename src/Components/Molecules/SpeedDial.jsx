@@ -16,7 +16,7 @@ const SpeedDial = ({ actions, direction = "up" }) => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-purple-700 transition-transform duration-300"
+        className="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-blue-700 transition-transform duration-300"
         style={{ transform: isOpen ? "rotate(45deg)" : "none" }}
         aria-label="Buka menu aksi"
       >

@@ -6,7 +6,7 @@ import AnimatedHeroTitle from "../Molecules/AnimatedHeroTitle";
 const HeroSection = () => {
   return (
     <section className="relative bg-white overflow-hidden animate-fade-in-up">
-      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#9038FF] via-[#f9f6f4] to-white"></div>
+      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#1D4ED8] via-[#f9f6f4] to-white"></div>
       <ParticlesBackground />
       <div className="container mx-auto flex min-h-screen items-center px-4 pt-1 pb-12 sm:px-6">
         <div className="grid w-full grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">

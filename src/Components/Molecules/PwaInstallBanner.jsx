@@ -86,7 +86,7 @@ const PwaInstallBanner = () => {
           <div className="flex items-center gap-4 w-full sm:w-auto">
             <button
               onClick={handleInstallClick}
-              className="w-full sm:w-auto flex-shrink-0 px-4 py-2 bg-primary text-white font-bold rounded-lg hover:bg-purple-700 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto flex-shrink-0 px-4 py-2 bg-primary text-white font-bold rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2"
             >
               <FaDownload />
               Install
