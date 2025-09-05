@@ -1,4 +1,4 @@
-import { FaUserTie, FaMobileAlt, FaBookOpen } from "react-icons/fa";
+import { FaUserTie, FaMobileAlt, FaBookOpen } from 'react-icons/fa';
 
 const Feature = ({ icon, title, description }) => (
   <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -9,7 +9,9 @@ const Feature = ({ icon, title, description }) => (
       <h2 className="text-secondary text-lg title-font font-bold mb-3">
         {title}
       </h2>
-      <p className="leading-relaxed text-base">{description}</p>
+      <p className="leading-relaxed text-base whitespace-pre-line text-left">
+        {description}
+      </p>
     </div>
   </div>
 );
@@ -18,21 +20,21 @@ const WhyJoinSection = () => {
   const features = [
     {
       icon: <FaUserTie className="w-8 h-8" />,
-      title: "Somos legais",
+      title: 'Serviços personalizados',
       description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ' - Formação de Líderes \n\n  - Comunicação Assertiva e Feedback \n\n  - Cultura Forte & Liderança Multiplicadora \n\n  - Gestão do tempo \n\n  - Gestão de Conflitos',
     },
     {
       icon: <FaMobileAlt className="w-8 h-8" />,
-      title: "Somos legais",
+      title: 'Diferenciais',
       description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ' - Projetos personalizados, nunca soluções de prateleira \n\n  - Olhar estratégico para a cultura organizacional \n\n  - Metodologias modernas e ferramentas práticas \n \n - Foco no desenvolvimento de líderes e no engajamento de colaboradores. \n\n  - Experiência comprovada em consultoria e treinamentos',
     },
     {
       icon: <FaBookOpen className="w-8 h-8" />,
-      title: "Somos legais",
+      title: 'Resultados Esperados',
       description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+        ' - Líderes mais preparados e engajados \n\n - Processos de RH e DP mais eficientes\n\n - Cultura organizacional fortalecida\n\n - Equipes mais motivadas e produtivas\n\n - Maior retenção de talentos e performance empresarial',
     },
   ];
 
@@ -41,11 +43,46 @@ const WhyJoinSection = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-3xl text-2xl font-bold title-font text-secondary mb-4">
-            Porque escolher a LP?
+            Nossos Serviços
           </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
-            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+
+          <div class="flex justify-center gap-10">
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
+              <span class="text-gray-700 mt-10 font-bold text-center">
+                Consultoria e Auditoria Estratégica em RH e DP
+              </span>
+              Transformamos rotinas administrativas em processos eficientes,
+              conectados à estratégia da empresa.
+            </p>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
+              <span class="text-gray-700 mt-10 font-bold text-center">
+                Gestão de Cargos, Salários e Carreiras
+              </span>
+              Estruturas que valorizam talentos, promovem crescimento
+              sustentável e fortalecem o engajamento.<br></br>
+            </p>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
+              <span class="text-gray-700 mt-10 font-bold text-center">
+                Treinamentos, Palestras e Workshops Corporativos
+              </span>
+              Cultura Organizacional e Arquitetura Empresarial<br></br>
+              Projetos que fortalecem a identidade da empresa, aumentam a
+              clareza e impulsionam a performance.<br></br>
+            </p>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
+              <span class="text-gray-700 mt-10 font-bold text-center">
+                Treinamentos, Palestras e Workshops Corporativos
+              </span>
+              Formação prática e estratégica para líderes preparados para
+              inspirar e multiplicar resultados.
+            </p>
+          </div>
+
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-700 mt-20 font-bold">
+            Abaixo alguns dos principais temas, mas podemos construir de acordo
+            com sua necessidade.
           </p>
+
           <div className="flex mt-6 justify-center">
             <div className="w-16 h-1 rounded-full bg-primary inline-flex"></div>
           </div>

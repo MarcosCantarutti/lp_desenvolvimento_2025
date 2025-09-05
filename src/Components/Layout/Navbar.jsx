@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
-import { FaWhatsapp, FaInstagram, FaLinkedin  } from "react-icons/fa";
+import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
+import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 // Mendefinisikan komponen Navbar yang mencakup tautan navigasi dan responsif untuk perangkat mobile.
 const Navbar = () => {
@@ -13,28 +13,28 @@ const Navbar = () => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 10);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const navLinks = [
-    { title: "Inicio", path: "/" },
-    { title: "Sobre", path: "/about" },
-    { title: "Vagas", path: "/about" },
+    { title: 'Inicio', path: '/' },
+    { title: 'Sobre', path: '/' },
+    { title: 'Vagas', path: '/' },
   ];
 
-  const linkBaseClass = "text-base font-medium transition-colors duration-300";
-  const activeLinkClass = "text-primary";
-  const inactiveLinkClass = "text-gray-800 hover:text-primary";
+  const linkBaseClass = 'text-base font-medium transition-colors duration-300';
+  const activeLinkClass = 'text-primary';
+  const inactiveLinkClass = 'text-gray-800 hover:text-primary';
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         hasScrolled
-          ? "bg-white/50 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          ? 'bg-white/50 backdrop-blur-md shadow-md'
+          : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ const Navbar = () => {
                 src={logo}
                 alt="HIMTI Learning Group"
               />
-    
+
               <span className="font-semibold text-gray-600 sm:text-lg">
                 LP Desenvolvimento
               </span>
@@ -59,7 +59,7 @@ const Navbar = () => {
                 key={link.title}
                 to={link.path}
                 className={({ isActive }) =>
-                  `${linkBaseClass} ${isActive ? activeLinkClass : inactiveLinkClass}`
+                  `${linkBaseClass} ${inactiveLinkClass}`
                 }
               >
                 {link.title}
@@ -68,34 +68,34 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-                <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <FaInstagram size={25} />
-              </a>
-            
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={25} />
-              </a>
-             <a
-                           href=""
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           className="text-gray-400 hover:text-primary transition-colors"
-                           aria-label="Whatsapp"
-                         >
-                           <FaWhatsapp size={25} />
-                         </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={25} />
+            </a>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={25} />
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="Whatsapp"
+            >
+              <FaWhatsapp size={25} />
+            </a>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -114,7 +114,7 @@ const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+                  d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'}
                 />
               </svg>
             </button>
@@ -130,7 +130,9 @@ const Navbar = () => {
                 key={link.title}
                 to={link.path}
                 className={({ isActive }) =>
-                  `block px-3 py-2 rounded-md text-base ${linkBaseClass} ${isActive ? activeLinkClass : inactiveLinkClass}`
+                  `block px-3 py-2 rounded-md text-base ${linkBaseClass} ${
+                    isActive ? activeLinkClass : inactiveLinkClass
+                  }`
                 }
                 onClick={() => setIsOpen(false)}
               >
@@ -138,34 +140,34 @@ const Navbar = () => {
               </NavLink>
             ))}
             <div className="border-t  border-gray-200 my-2 pt-2"></div>
-                <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <FaInstagram size={25} />
-              </a>
-            
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={25} />
-              </a>
-             <a
-                           href=""
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           className="text-gray-400 hover:text-primary transition-colors"
-                           aria-label="Whatsapp"
-                         >
-                           <FaWhatsapp size={25} />
-                         </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={25} />
+            </a>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={25} />
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="Whatsapp"
+            >
+              <FaWhatsapp size={25} />
+            </a>
           </div>
         </div>
       )}

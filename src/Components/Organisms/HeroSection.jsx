@@ -1,7 +1,7 @@
-import heroIllustration from "../../assets/images/a.png";
-import Button from "../Atoms/Button";
-import ParticlesBackground from "../Atoms/ParticlesBackground";
-import AnimatedHeroTitle from "../Molecules/AnimatedHeroTitle";
+import heroIllustration from '../../assets/images/a.png';
+import Button from '../Atoms/Button';
+import ParticlesBackground from '../Atoms/ParticlesBackground';
+import AnimatedHeroTitle from '../Molecules/AnimatedHeroTitle';
 
 const HeroSection = () => {
   return (
@@ -13,8 +13,9 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <AnimatedHeroTitle />
 
-            <p className="mt-6 text-lg leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque voluptatibus quidem eius vitae fugiat amet itaque modi, harum laboriosam. Eaque, provident ea hic eligendi rem temporibus. Ipsum, non ex.
+            <p className="mt-6 text-lg leading-relaxed text-gray-800 font-bold">
+              Consultoria estratégica em RH, DP e Desenvolvimento de Lideranças.
+              Projetos personalizados, alinhados à cultura da sua empresa.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
@@ -25,7 +26,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Fale com o especialista
+                Quero Falar com um Consultor
               </Button>
 
               {/* <Button

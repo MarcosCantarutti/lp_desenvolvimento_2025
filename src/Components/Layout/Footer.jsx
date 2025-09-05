@@ -1,6 +1,6 @@
-import himtiLogo from "../../assets/images/himti-logo.png";
-import { Link } from "react-router-dom";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import himtiLogo from '../../assets/images/himti-logo.png';
+import { Link } from 'react-router-dom';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -9,13 +9,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex flex-col items-center text-center md:flex-row md:items-center md:space-x-4 md:text-left">
-              
               <div>
                 <span className="block font-semibold text-white text-base mb-1">
-                  Entre em contato com a gente!
+                  Está pronto para transformar a gestão da sua empresa?
                 </span>
                 <p className="text-sm text-gray-300">
-                 Ficou interessado em nossos serviços? Fale conosco atraves das nossas redes!
+                  Entre em contato e descubra como podemos construir juntos o
+                  próximo nível da sua liderança, melhorar sua gestão e
+                  construir processos e uma estrutura sustentável.
                 </p>
               </div>
             </div>
@@ -111,7 +112,7 @@ const Footer = () => {
               >
                 <FaInstagram size={25} />
               </a>
-            
+
               <a
                 href=""
                 target="_blank"
@@ -126,9 +127,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} LP DESENVOLVIMENTO
-          </p>
+          <p>&copy; {new Date().getFullYear()} LP DESENVOLVIMENTO</p>
         </div>
       </div>
     </footer>

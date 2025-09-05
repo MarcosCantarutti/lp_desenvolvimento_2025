@@ -1,24 +1,25 @@
-import React from "react";
-import Lottie from "lottie-react";
-import { FaCheckCircle } from "react-icons/fa";
-import { motion } from "framer-motion";
-import himtichatAnimation from "../../assets/himtichat-section-animation.json";
+import React from 'react';
+import Lottie from 'lottie-react';
+import { FaCheckCircle } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import himtichatAnimation from '../../assets/himtichat-section-animation.json';
 
 const HIMTIChatSection = () => {
   const features = [
     {
-      title: "bonitos",
-      description: "Tempelkan kode error Anda dan dapatkan solusi instan.",
+      title: '',
+      description:
+        'Acreditamos que não existem soluções enlatadas quando o assunto é gestão de pessoas e liderança. Cada organização tem sua própria história, cultura e desafios.',
     },
     {
-      title: "cheirosos",
+      title: '',
       description:
-        "Minta penjelasan tentang algoritma, framework, atau konsep teknis apa pun.",
+        'Por isso, desenvolvemos projetos sob medida, a partir da escuta ativa e da atuação conjunta com gestores e equipes, sempre com foco em resultados práticos e sustentáveis.',
     },
     {
-      title: "trabalhadores",
+      title: '',
       description:
-        "Butuh ide untuk tugas akhir atau proyek pribadi? HIMTIChat siap membantu.",
+        'Nosso compromisso é transformar áreas operacionais em setores estratégicos e preparar líderes para conduzir suas equipes com clareza, confiança e engajamento.',
     },
   ];
 
@@ -69,11 +70,10 @@ const HIMTIChatSection = () => {
             </div>
             <div className="text-center lg:text-left">
               <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight">
-                Sobre nós
-                
+                Quem Somos
               </h2>
               <p className="mt-4 text-lg text-blue-100">
-                somos muito legais, olha só
+                Conheça um pouco mais sobre nós
               </p>
               <div className="mt-8 text-left space-y-4">
                 {features.map((feature, index) => (
@@ -81,7 +81,7 @@ const HIMTIChatSection = () => {
                     key={index}
                     className="flex items-start gap-4 p-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-lg"
                     whileHover={{ scale: 1.03 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                   >
                     <div className="flex-shrink-0 w-8 h-8 bg-blue-300/20 rounded-full flex items-center justify-center">
                       <FaCheckCircle className="text-blue-300" />
