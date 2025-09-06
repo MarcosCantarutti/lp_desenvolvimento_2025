@@ -41,36 +41,36 @@ const WhyJoinSection = () => {
   return (
     <section className="text-gray-600 body-font bg-white">
       <div className="container px-5 py-24 mx-auto">
-        <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font text-secondary mb-4">
+        <div className="text-center mb-20 px-4">
+          <h1 className="text-2xl sm:text-3xl font-bold title-font text-secondary mb-8">
             Nossos Serviços
           </h1>
 
-          <div class="flex justify-center gap-10">
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
-              <span class="text-gray-700 mt-10 font-bold text-center">
+          <div class="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-10">
+            <p className="text-sm sm:text-base leading-relaxed sm:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-">
+              <span class="text-gray-700 font-bold text-center text-base sm:text-lg">
                 Consultoria e Auditoria Estratégica em RH e DP
               </span>
               Transformamos rotinas administrativas em processos eficientes,
               conectados à estratégia da empresa.
             </p>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
-              <span class="text-gray-700 mt-10 font-bold text-center">
+            <p className="text-sm sm:text-base leading-relaxed sm:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-">
+              <span class="text-gray-700 font-bold text-center text-base sm:text-lg">
                 Gestão de Cargos, Salários e Carreiras
               </span>
               Estruturas que valorizam talentos, promovem crescimento
               sustentável e fortalecem o engajamento.<br></br>
             </p>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
-              <span class="text-gray-700 mt-10 font-bold text-center">
+            <p className="text-sm sm:text-base leading-relaxed sm:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-">
+              <span class="text-gray-700 font-bold text-center text-base sm:text-lg">
                 Treinamentos, Palestras e Workshops Corporativos
               </span>
               Cultura Organizacional e Arquitetura Empresarial<br></br>
               Projetos que fortalecem a identidade da empresa, aumentam a
               clareza e impulsionam a performance.<br></br>
             </p>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-2">
-              <span class="text-gray-700 mt-10 font-bold text-center">
+            <p className="text-sm sm:text-base leading-relaxed sm:w-2/4 lg:w-3/4 mx-auto text-gray-500 flex flex-col gap-">
+              <span class="text-gray-700 font-bold text-center text-base sm:text-lg">
                 Treinamentos, Palestras e Workshops Corporativos
               </span>
               Formação prática e estratégica para líderes preparados para
