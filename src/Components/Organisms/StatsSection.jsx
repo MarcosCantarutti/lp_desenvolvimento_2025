@@ -81,11 +81,11 @@ const StatsSection = () => {
       <div className="relative z-10 container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Confira nossos números
+            Nossos números
           </h2>
-          <p className="mt-4 text-lg text-blue-300">
+          {/* <p className="mt-4 text-lg text-blue-300">
             olha como somos legais
-          </p>
+          </p> */}
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

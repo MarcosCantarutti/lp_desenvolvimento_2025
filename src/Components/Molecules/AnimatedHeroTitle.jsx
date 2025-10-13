@@ -3,24 +3,24 @@ import { TypeAnimation } from 'react-type-animation';
 
 const AnimatedHeroTitle = () => {
   return (
-    <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-5xl md:text-6xl">
-      <span>
+    <h1 className="text-4xl font-bold tracking-tight text-secondary sm:text-4xl md:text-5xl">
+      {/* <span>
         <TypeAnimation
           sequence={['LP Desenvolvimento']}
           wrapper="span"
           speed={40}
           cursor={false}
         />
-      </span>
+      </span> */}
       <br />
       <strong className="text-primary">
         <TypeAnimation
           sequence={[
-            2000, // Tunggu 1.5 detik setelah baris pertama selesai
-            'Transformamos Pessoas, Processos e Líderes em Resultados Reais',
+            1000, // Tunggu 1.5 detik setelah baris pertama selesai
+            'Transformamos Pessoas, processos e líderes em resultados reais',
           ]}
           wrapper="span"
-          speed={40}
+          speed={50}
           repeat={Infinity}
           cursor={false}
         />

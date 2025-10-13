@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import heroIllustration from '../../assets/images/a.png';
+import introVideo from '../../assets/images/intro.mp4';
 import Button from '../Atoms/Button';
 import ParticlesBackground from '../Atoms/ParticlesBackground';
 import AnimatedHeroTitle from '../Molecules/AnimatedHeroTitle';
 
 const HeroSection = () => {
+  const [videoReady, setVideoReady] = useState(false);
   return (
     <section className="relative bg-white overflow-hidden animate-fade-in-up">
-      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#1D4ED8] via-[#f9f6f4] to-white"></div>
+      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#132b37] via-[#b1b1b1] to-white"></div>
       <ParticlesBackground />
       <div className="container mx-auto flex min-h-screen items-center px-4 pt-1 pb-12 sm:px-6">
         <div className="grid w-full grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">
@@ -26,7 +29,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Quero Falar com um Consultor
+                Quero falar com um especialista
               </Button>
 
               {/* <Button
@@ -42,11 +45,17 @@ const HeroSection = () => {
 
           <div className="relative flex items-center justify-center">
             <div className="relative w-full max-w-xl lg:max-w-none">
-              {/* <img
-                alt="Mahasiswa"
-                src={heroIllustration}
-                className="max-w-lg h-auto w-full rounded-2xl object-contain"
-              /> */}
+              <video
+                className={`w-full h-auto rounded-2xl shadow-2xl ring-1 ring-black/10 transition-opacity duration-700 ease-out ${videoReady ? 'opacity-100' : 'opacity-0'}`}
+                src={introVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+                poster={heroIllustration}
+                onLoadedData={() => setVideoReady(true)}
+              />
             </div>
           </div>
         </div>

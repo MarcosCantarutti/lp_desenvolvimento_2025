@@ -3,23 +3,29 @@ import Lottie from 'lottie-react';
 import { FaCheckCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import himtichatAnimation from '../../assets/himtichat-section-animation.json';
+import img from '../../assets/images/img2.jpg';
 
 const HIMTIChatSection = () => {
   const features = [
     {
-      title: '',
+      title: 'Consultoria e Auditoria Estratégica em RH e DP',
       description:
-        'Acreditamos que não existem soluções enlatadas quando o assunto é gestão de pessoas e liderança. Cada organização tem sua própria história, cultura e desafios.',
+        'Transformamos rotinas administrativas em processos eficientes, conectados à estratégia da empresa.',
     },
     {
-      title: '',
+      title: 'Gestão de Cargos, Salários e Carreiras',
       description:
-        'Por isso, desenvolvemos projetos sob medida, a partir da escuta ativa e da atuação conjunta com gestores e equipes, sempre com foco em resultados práticos e sustentáveis.',
+        'Estruturas que valorizam talentos, promovem crescimento sustentável e fortalecem o engajamento.',
     },
     {
-      title: '',
+      title: 'Cultura Organizacional e Arquitetura Empresarial',
       description:
-        'Nosso compromisso é transformar áreas operacionais em setores estratégicos e preparar líderes para conduzir suas equipes com clareza, confiança e engajamento.',
+        'Projetos que fortalecem a identidade da empresa, aumentam a clareza e impulsionam a performance',
+    },
+    {
+      title: 'Treinamentos, Palestras e Workshops Corporativos',
+      description:
+        'Formação prática e estratégica para líderes preparados para inspirar e multiplicar resultados.',
     },
   ];
 
@@ -58,28 +64,29 @@ const HIMTIChatSection = () => {
       </div>
 
       {/* Konten Utama */}
-      <section className="relative z-0 text-white">
+      <section className="relative z-0 text-white" id='services'>
         <div className="pt-32 pb-20 container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <Lottie
-                animationData={himtichatAnimation}
-                loop
-                className="w-full max-w-lg"
-              />
+            <div className="flex justify-center items-center">
+            <img
+              src={img}
+              alt="HIMTI Chat illustration"
+              className="w-full h-full max-w-[40rem] rounded-2xl object-cover shadow-lg ring-1 ring-black/10"
+              loading="lazy"
+            />
             </div>
             <div className="text-center lg:text-left">
               <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight">
-                Quem Somos
+                Conheça nossos serviços
               </h2>
-              <p className="mt-4 text-lg text-blue-100">
+              {/* <p className="mt-4 text-lg text-blue-100">
                 Conheça um pouco mais sobre nós
-              </p>
+              </p> */}
               <div className="mt-8 text-left space-y-4">
                 {features.map((feature, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-lg"
+                    className="flex items-start gap-4 p-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-lg cursor-pointer"
                     whileHover={{ scale: 1.03 }}
                     transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                   >

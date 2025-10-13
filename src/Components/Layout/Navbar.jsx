@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../../assets/images/logomain.png';
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 // Mendefinisikan komponen Navbar yang mencakup tautan navigasi dan responsif untuk perangkat mobile.
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const location = useLocation();
 
   // Menggunakan efek untuk mengubah status navbar ketika pengguna menggulir halaman
   useEffect(() => {
@@ -21,13 +22,24 @@ const Navbar = () => {
 
   const navLinks = [
     { title: 'Inicio', path: '/' },
-    { title: 'Sobre', path: '/' },
-    { title: 'Vagas', path: '/' },
+    { title: 'Serviços', path: '#services' },
   ];
+
+  const scrollToHash = (hash) => {
+    const id = hash.replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const linkBaseClass = 'text-base font-medium transition-colors duration-300';
   const activeLinkClass = 'text-primary';
   const inactiveLinkClass = 'text-gray-800 hover:text-primary';
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <nav
@@ -39,31 +51,56 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-20">
-          <NavLink to="/" className="flex-shrink-0">
+          <NavLink
+            to="/"
+            className="flex-shrink-0"
+            onClick={(e) => {
+              if (location.pathname === '/') {
+                e.preventDefault();
+                scrollToTop();
+              }
+            }}
+          >
             <div className="flex items-center gap-3">
               <img
-                className="h-10 w-auto"
+                className="h-20 w-auto mt-6"
                 src={logo}
                 alt="HIMTI Learning Group"
               />
 
-              <span className="font-semibold text-gray-600 sm:text-lg">
+              {/* <span className="font-semibold text-gray-600 sm:text-lg">
                 LP Desenvolvimento
-              </span>
+              </span> */}
             </div>
           </NavLink>
 
           <div className="hidden md:flex md:items-center md:space-x-10">
             {navLinks.map((link) => (
-              <NavLink
-                key={link.title}
-                to={link.path}
-                className={({ isActive }) =>
-                  `${linkBaseClass} ${inactiveLinkClass}`
-                }
-              >
-                {link.title}
-              </NavLink>
+              link.path.startsWith('#') ? (
+                <button
+                  key={link.title}
+                  onClick={() => scrollToHash(link.path)}
+                  className={`${linkBaseClass} ${inactiveLinkClass}`}
+                >
+                  {link.title}
+                </button>
+              ) : (
+                <NavLink
+                  key={link.title}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `${linkBaseClass} ${inactiveLinkClass}`
+                  }
+                  onClick={(e) => {
+                    if (link.path === '/' && location.pathname === '/') {
+                      e.preventDefault();
+                      scrollToTop();
+                    }
+                  }}
+                >
+                  {link.title}
+                </NavLink>
+              )
             ))}
           </div>
 
@@ -126,18 +163,34 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-xl">
           <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <NavLink
-                key={link.title}
-                to={link.path}
-                className={({ isActive }) =>
-                  `block px-3 py-2 rounded-md text-base ${linkBaseClass} ${
-                    isActive ? activeLinkClass : inactiveLinkClass
-                  }`
-                }
-                onClick={() => setIsOpen(false)}
-              >
-                {link.title}
-              </NavLink>
+              link.path.startsWith('#') ? (
+                <button
+                  key={link.title}
+                  onClick={() => { scrollToHash(link.path); setIsOpen(false); }}
+                  className={`block w-full text-left px-3 py-2 rounded-md text-base ${linkBaseClass} ${inactiveLinkClass}`}
+                >
+                  {link.title}
+                </button>
+              ) : (
+                <NavLink
+                  key={link.title}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `block px-3 py-2 rounded-md text-base ${linkBaseClass} ${
+                      isActive ? activeLinkClass : inactiveLinkClass
+                    }`
+                  }
+                  onClick={(e) => {
+                    if (link.path === '/' && location.pathname === '/') {
+                      e.preventDefault();
+                      scrollToTop();
+                    }
+                    setIsOpen(false);
+                  }}
+                >
+                  {link.title}
+                </NavLink>
+              )
             ))}
             <div className="border-t  border-gray-200 my-2 pt-2"></div>
             <a

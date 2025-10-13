@@ -22,14 +22,15 @@ const Home = () => {
       <AnimatedSection>
         <MentorSection />
       </AnimatedSection> */}
-
+      <AnimatedSection>
+        <StatsSection />
+      </AnimatedSection>
+      
       <AnimatedSection>
         <TestimonialSection />
       </AnimatedSection>
 
-      <AnimatedSection>
-        <StatsSection />
-      </AnimatedSection>
+   
     </>
   );
 };

@@ -5,7 +5,7 @@ export const testimonialData = [
     image: "https://randomuser.me/api/portraits/women/6.jpg",
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",    likes: 121,
-    timestamp: "10:15 AM · 12 Jul 2025",
+    timestamp: "12 Jul 2025",
     socials: {
       github: "#",
       instagram: "#",
@@ -19,7 +19,7 @@ export const testimonialData = [
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     likes: 240,
-    timestamp: "3:45 PM · 10 Jul 2025",
+    timestamp: "10 Jul 2025",
     socials: {
       github: "https://github.com/RifkiFrds/",
       instagram: "https://www.instagram.com/frdskii_/",
@@ -32,7 +32,7 @@ export const testimonialData = [
     image: "https://randomuser.me/api/portraits/women/54.jpg",
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",    likes: 315,
-    timestamp: "9:00 AM · 8 Jul 2025",
+    timestamp: "8 Jul 2025",
     socials: {
       github: "#",
       instagram: "#",
@@ -45,7 +45,7 @@ export const testimonialData = [
     image: "https://randomuser.me/api/portraits/men/43.jpg",
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",    likes: 188,
-    timestamp: "7:30 PM · 5 Jul 2025",
+    timestamp: "5 Jul 2025",
     socials: {
       github: "#",
       instagram: "#",
@@ -58,7 +58,7 @@ export const testimonialData = [
     image: "https://randomuser.me/api/portraits/women/43.jpg",
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",    likes: 250,
-    timestamp: "11:11 AM · 2 Jul 2025",
+    timestamp: "2 Jul 2025",
     socials: {
       github: "#",
       instagram: "#",
@@ -71,7 +71,7 @@ export const testimonialData = [
     image: "https://randomuser.me/api/portraits/men/62.jpg",
     testimonial:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",    likes: 198,
-    timestamp: "8:05 PM · 1 Jul 2025",
+    timestamp: "1 Jul 2025",
     socials: {
       github: "#",
       instagram: "#",

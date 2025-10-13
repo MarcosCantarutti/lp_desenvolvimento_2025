@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#9038FF",
-        secondary: "#0c0c0cff",
-        accent: "#F97316",
-        button: "#f9f6f4ff",
+        // Updated brand palette
+        primary: "#132b37", // deep blue-green
+        secondary: "#0f0802", // warm brown
+        accent: "#bd782d", // orange accent
+        button: "#efeee9", // light background/button
+        ink: "#0f0802", // near-black
       },
       keyframes: {
         "pulse-slow": {

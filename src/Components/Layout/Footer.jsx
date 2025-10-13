@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row gap-5">
           <div className="md:col-span-1">
             <div className="flex flex-col items-center text-center md:flex-row md:items-center md:space-x-4 md:text-left">
               <div>
@@ -126,8 +126,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} LP DESENVOLVIMENTO</p>
+        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm font-bold">
+          <p>&copy; {new Date().getFullYear()} LP DESENVOLVIMENTO<br/> Created by <a href="https://marcoscantarutti.com.br/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">Marcos Cantarutti</a></p>
         </div>
       </div>
     </footer>

@@ -32,14 +32,14 @@
   }
 
   .text-primary{
-    color: #1D4ED8;
+    color: #132b37;
   }
 
   .bg-primary{
-    background-color: #1D4ED8;
+    background-color: #132b37;
   }
 
   .border-primary{
-    color: #1D4ED8;
+    border-color: #132b37;
   }
 }
