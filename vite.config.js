@@ -64,6 +64,10 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        // Increase cacheable asset size limit (default 2 MiB)
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+        // Exclude very large logo from precache to avoid build failures on CI
+        globIgnores: ["**/*logomain*.png"],
         cleanupOutdatedCaches: true,
       },
     }),
