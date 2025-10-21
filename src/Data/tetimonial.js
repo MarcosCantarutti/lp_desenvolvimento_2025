@@ -14,11 +14,11 @@ export const testimonialData = [
     },
   },
   {
-    name: 'Muhamad Rifki Firdaus',
-    handle: '@rifkifrds_',
+    name: 'Kamila Teixeira',
+    handle: '@kamilateixeira_ademicon',
     image: '/rifki-formal.png',
     testimonial:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Foi uma experiência fantástica obter conhecimentos e ferramentas práticas para aplicar e evoluir tanto como líder quanto como pessoa.',
     likes: 240,
     timestamp: '10 Jul 2025',
     socials: {
@@ -28,55 +28,13 @@ export const testimonialData = [
     },
   },
   {
-    name: 'Anggi',
-    handle: '@anggi23_',
+    name: 'Sabrina Brito',
+    handle: '@sabrinabrito.ademicon',
     image: 'https://randomuser.me/api/portraits/women/54.jpg',
     testimonial:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Fiquei encantada com tudo o que aprendi e com o quanto agregou no meu desenvolvimento. Quero muito continuar com uma mentoria individual com o Paulo, com toda certeza, para seguir evoluindo cada vez mais!',
     likes: 315,
     timestamp: '8 Jul 2025',
-    socials: {
-      github: '#',
-      instagram: '#',
-      linkedin: '#',
-    },
-  },
-  {
-    name: 'Daris',
-    handle: '@daris12_',
-    image: 'https://randomuser.me/api/portraits/men/43.jpg',
-    testimonial:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    likes: 188,
-    timestamp: '5 Jul 2025',
-    socials: {
-      github: '#',
-      instagram: '#',
-      linkedin: '#',
-    },
-  },
-  {
-    name: 'Dewi Lestari',
-    handle: '@dewilestari',
-    image: 'https://randomuser.me/api/portraits/women/43.jpg',
-    testimonial:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    likes: 250,
-    timestamp: '2 Jul 2025',
-    socials: {
-      github: '#',
-      instagram: '#',
-      linkedin: '#',
-    },
-  },
-  {
-    name: 'Agus Setiawan',
-    handle: '@agus_setia',
-    image: 'https://randomuser.me/api/portraits/men/62.jpg',
-    testimonial:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    likes: 198,
-    timestamp: '1 Jul 2025',
     socials: {
       github: '#',
       instagram: '#',
