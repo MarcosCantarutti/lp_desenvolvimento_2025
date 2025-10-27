@@ -8,15 +8,32 @@ import AnimatedHeroTitle from '../Molecules/AnimatedHeroTitle';
 const HeroSection = () => {
   const [videoReady, setVideoReady] = useState(false);
   return (
-    <section className="relative bg-white overflow-hidden animate-fade-in-up">
-      <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#132b37] via-[#b1b1b1] to-white"></div>
+    <section className="relative bg-white overflow-hidden animate-fade-in-up min-h-screen flex items-center">
+      {/* Video Background */}
+      <video
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-out ${videoReady ? 'opacity-100' : 'opacity-0'}`}
+        src={introVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls={false}
+        poster={heroIllustration}
+        onLoadedData={() => setVideoReady(true)}
+      />
+      
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      
       <ParticlesBackground />
-      <div className="container mx-auto flex min-h-screen items-center px-4 pt-1 pb-12 sm:px-6">
-        <div className="grid w-full grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">
+      
+      {/* Content */}
+      <div className="container mx-auto relative z-10 px-4 py-12 sm:px-6">
+        <div className="max-w-3xl">
           <div className="text-center lg:text-left">
             <AnimatedHeroTitle />
 
-            <p className="mt-6 text-lg leading-relaxed text-gray-800 font-bold">
+            <p className="mt-6 text-lg leading-relaxed text-white font-bold drop-shadow-lg">
               Consultoria estratégica em RH, DP e Desenvolvimento de Lideranças.
               Projetos personalizados, alinhados à cultura da sua empresa.
             </p>
@@ -40,22 +57,6 @@ const HeroSection = () => {
               >
                 Lihat Course
               </Button> */}
-            </div>
-          </div>
-
-          <div className="relative flex items-center justify-center">
-            <div className="relative w-full max-w-xl lg:max-w-none">
-              <video
-                className={`w-full h-auto rounded-2xl shadow-2xl ring-1 ring-black/10 transition-opacity duration-700 ease-out ${videoReady ? 'opacity-100' : 'opacity-0'}`}
-                src={introVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls={false}
-                poster={heroIllustration}
-                onLoadedData={() => setVideoReady(true)}
-              />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const AnimatedHeroTitle = () => {
         />
       </span> */}
       <br />
-      <strong className="text-primary">
+      <strong className="text-white">
         <TypeAnimation
           sequence={[
             1000, // Tunggu 1.5 detik setelah baris pertama selesai
