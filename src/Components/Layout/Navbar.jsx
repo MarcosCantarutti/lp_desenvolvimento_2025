@@ -9,6 +9,10 @@ const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const location = useLocation();
 
+  const INSTAGRAM_URL = 'https://www.instagram.com/paulocantaruttioficial/';
+  const LINKEDIN_URL = 'https://www.linkedin.com/in/paulocantarutti/';
+  const WHATSAPP_URL = 'https://wa.me/5534999457198';
+
   // Menggunakan efek untuk mengubah status navbar ketika pengguna menggulir halaman
   useEffect(() => {
     const handleScroll = () => {
@@ -106,7 +110,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <a
-              href=""
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -116,7 +120,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href=""
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -125,7 +129,7 @@ const Navbar = () => {
               <FaLinkedin size={25} />
             </a>
             <a
-              href=""
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -194,7 +198,7 @@ const Navbar = () => {
             ))}
             <div className="border-t  border-gray-200 my-2 pt-2"></div>
             <a
-              href=""
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -204,7 +208,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href=""
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -213,7 +217,7 @@ const Navbar = () => {
               <FaLinkedin size={25} />
             </a>
             <a
-              href=""
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"

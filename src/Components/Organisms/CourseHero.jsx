@@ -23,16 +23,16 @@ const CourseHero = () => {
       <section className="container mx-auto px-4 py-24 pt-10 pb-6 sm:px-6">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-4xl text-3xl font-bold title-font mb-4 text-secondary">
-            Jelajahi Semua Course
+            Trilhas e conteúdos para líderes e equipes
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
-            Temukan materi yang tepat untuk meningkatkan keahlianmu. Ketik untuk
-            mencari course.
+            Encontre conteúdos que apoiam o desenvolvimento de pessoas, gestão
+            e cultura organizacional. Use a busca para localizar o que precisa.
           </p>
           <div className="mx-auto mt-8 w-full max-w-lg">
             <input
               type="text"
-              placeholder="Cari course seperti 'React' atau 'UI/UX'..."
+              placeholder="Busque por temas como liderança, cultura, RH, etc..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"

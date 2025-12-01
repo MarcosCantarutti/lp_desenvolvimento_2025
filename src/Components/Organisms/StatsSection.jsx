@@ -15,33 +15,33 @@ const StatsSection = () => {
     {
       icon: <FaProjectDiagram className="w-8 h-8 text-blue-300" />,
       value: 300,
-      label: "alguma coisa",
+      label: "horas de consultoria e projetos",
     },
     {
       icon: <FaUsers className="w-8 h-8 text-blue-300" />,
       value: 5,
-       label: "alguma coisa",
+      label: "anos de experiência em desenvolvimento humano",
     },
     {
       icon: <FaSmile className="w-8 h-8 text-blue-300" />,
       value: 95,
-       label: "alguma coisa",
+      label: "dos clientes relatam aumento de clareza e engajamento",
       suffix: "%",
     },
     {
       icon: <FaCode className="w-8 h-8 text-blue-300" />,
       value: 1000,
-       label: "alguma coisa",
+      label: "pessoas impactadas em treinamentos e workshops",
     },
     {
       icon: <FaChalkboardTeacher className="w-8 h-8 text-blue-300" />,
       value: 20,
-       label: "alguma coisa",
+      label: "programas e trilhas de desenvolvimento criados",
     },
     {
       icon: <FaLaptopCode className="w-8 h-8 text-blue-300" />,
       value: 50,
-       label: "alguma coisa",
+      label: "empresas atendidas em diferentes segmentos",
     },
   ];
 

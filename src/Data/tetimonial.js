@@ -9,8 +9,8 @@ export const testimonialData = [
     timestamp: '12 Jul 2025',
     socials: {
       github: '#',
-      instagram: '#',
-      linkedin: '#',
+      instagram: 'https://www.instagram.com/paulocantaruttioficial/',
+      linkedin: 'https://www.linkedin.com/in/paulocantarutti/',
     },
   },
   {
@@ -23,8 +23,8 @@ export const testimonialData = [
     timestamp: '10 Jul 2025',
     socials: {
       github: 'https://github.com/RifkiFrds/',
-      instagram: 'https://www.instagram.com/frdskii_/',
-      linkedin: 'https://www.linkedin.com/in/muhamad-rifkifrds/',
+      instagram: 'https://www.instagram.com/paulocantaruttioficial/',
+      linkedin: 'https://www.linkedin.com/in/paulocantarutti/',
     },
   },
   {
@@ -37,8 +37,8 @@ export const testimonialData = [
     timestamp: '8 Jul 2025',
     socials: {
       github: '#',
-      instagram: '#',
-      linkedin: '#',
+      instagram: 'https://www.instagram.com/paulocantaruttioficial/',
+      linkedin: 'https://www.linkedin.com/in/paulocantarutti/',
     },
   },
 ];

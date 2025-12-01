@@ -8,11 +8,11 @@ const ProgramHero = () => {
       <section className="container mx-auto px-4 py-24 pt-10 pb-6 sm:px-6">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-bold title-font mb-4 text-secondary">
-            Program Unggulan Kami
+            Programas e soluções para o seu negócio
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
-            Pilih jalur belajarmu dan mulailah perjalanan untuk menjadi seorang
-            profesional di bidang teknologi.
+            Escolha o formato ideal para desenvolver líderes, fortalecer a cultura
+            e organizar processos de RH e DP de forma estratégica.
           </p>
         </div>
 
