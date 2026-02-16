@@ -10,10 +10,10 @@ const NotFoundHero: React.FC = () => {
             <span className="sr-only">Error</span>404
           </h2>
           <p className="text-2xl md:text-3xl dark:text-gray-300">
-            Maaf. Sepertinya Kamu Tersesat
+            Desculpe. Parece que você está perdido. Vamos te ajudar a encontrar o caminho certo.
           </p>
           <Button variant="secondary" as="Link" to="/">
-            Back To Home
+            Voltar para a página inicial
           </Button>
         </div>
       </div>

@@ -76,9 +76,10 @@ const HIMTIChatSection: React.FC = () => {
             </div>
             <div className="text-center lg:text-left">
               <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight">
-                Tecnologia e Consultoria: A profissionalização de que sua
-                empresa precisa
+                Conheça nossos serviços
               </h2>
+              <h3 className="text-sm text-blue-200">Tecnologia, consultoria e mentoria: A profissionalização de que sua
+              empresa precisa</h3>
               <div className="mt-8 text-left space-y-4">
                 {features.map((feature) => (
                   <motion.div
