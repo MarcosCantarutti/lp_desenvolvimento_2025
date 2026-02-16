@@ -1,0 +1,83 @@
+import React from "react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+
+const Footer: React.FC = () => {
+  const INSTAGRAM_URL = "https://www.instagram.com/paulocantaruttioficial/";
+  const LINKEDIN_URL = "https://www.linkedin.com/in/paulocantarutti/";
+
+  return (
+    <footer className="bg-secondary text-gray-300">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex flex-col md:flex-row gap-5">
+          <div className="md:col-span-1">
+            <div className="flex flex-col items-center text-center md:flex-row md:items-center md:space-x-4 md:text-left">
+              <div>
+                <span className="block font-semibold text-white text-base mb-1">
+                  Está pronto para transformar a gestão da sua empresa?
+                </span>
+                <p className="text-sm text-gray-300">
+                  Entre em contato e descubra como podemos construir juntos o
+                  próximo nível da sua liderança, melhorar sua gestão e construir
+                  processos e uma estrutura sustentável.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center md:text-left"></div>
+
+          <div className="text-center md:text-left"></div>
+
+          <div className="text-center md:text-left">
+            <h3 className="text-white font-semibold tracking-wider">
+              Nossos contatos:
+            </h3>
+            <ul className="mt-4 space-y-2">
+              <li className="flex items-center justify-center md:justify-start">
+                <p>contato@lpdesenvolvimento.com.br</p>
+              </li>
+            </ul>
+            <div className="mt-4 flex space-x-5 justify-center md:justify-start">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={25} />
+              </a>
+
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={25} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm font-bold">
+          <p>
+            &copy; {new Date().getFullYear()} LP DESENVOLVIMENTO
+            <br /> Created by{" "}
+            <a
+              href="https://marcoscantarutti.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors"
+            >
+              Marcos Cantarutti
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
