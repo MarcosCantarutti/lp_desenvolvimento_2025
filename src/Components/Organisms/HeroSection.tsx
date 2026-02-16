@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
             <AnimatedHeroTitle />
 
             <p className="mt-6 text-lg leading-relaxed text-white font-bold drop-shadow-lg">
-            Sistema completo de Gestão Empresarial, com formações e mentorias para desenvolver líderes, e ferramentas e processos para impulsionar empresas que desejam crescer com estrutura, estratégia e alta performance.
+            Sistema completo de Gestão Empresarial, com formações e mentorias para desenvolver líderes, ferramentas e processos para impulsionar empresas que desejam crescer com estrutura, estratégia e alta performance.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
