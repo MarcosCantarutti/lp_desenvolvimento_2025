@@ -29,11 +29,11 @@ export const testimonialData: Testimonial[] = [
     },
   },
   {
-    name: "Sabrina Brito",
-    handle: "@sabrinabrito.ademicon",
-    image: "https://randomuser.me/api/portraits/women/54.jpg",
+    name: "Rafael Versieux",
+    handle: "@rafaelversieux.ademicon",
+    image: "",
     testimonial:
-      "Fiquei encantada com tudo o que aprendi e com o quanto agregou no meu desenvolvimento. Quero muito continuar com uma mentoria individual com o Paulo, com toda certeza, para seguir evoluindo cada vez mais!",
+      "É com grande prazer que recomendo Paulo como um profissional altamente competente e dedicado. Durante nosso tempo juntos, pude testemunhar sua habilidade excepcional em lidar com desafios de forma calma e eficaz, bem como sua disposição para compartilhar conhecimento e orientação. Sua gestão de conflitos é exemplar, criando um ambiente de trabalho positivo e produtivo. Paulo oferece liberdade para o desenvolvimento pessoal e profissional de seus liderados, e tenho certeza de que ele será um ativo valioso onde quer que vá.",
     likes: 315,
     timestamp: "8 Jul 2025",
     socials: {
