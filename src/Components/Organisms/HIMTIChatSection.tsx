@@ -7,25 +7,25 @@ import { Feature } from "../../types";
 const HIMTIChatSection: React.FC = () => {
   const features: Feature[] = [
     {
-      title: "Ferramentas de Desenvolvimento e Acompanhamento",
-      description: "PDI e trilhas de aprendizagem e treinamentos.",
+      title: "Desenvolvimento Estruturado de Pessoas",
+      description: "PDI, trilhas de aprendizagem e programas de treinamento alinhados à estratégia do negócio. Criamos jornadas de desenvolvimento claras, mensuráveis e conectadas aos objetivos da empresa, garantindo evolução contínua de colaboradores e líderes.",
     },
     {
-      title: "Avaliações e Feedbacks",
-      description: "Gestão de desempenho com dados reais.",
+      title: "Avaliação de Desempenho e Feedback Estratégico",
+      description: "Gestão de performance baseada em dados, critérios objetivos e acompanhamento contínuo. Transforme avaliações em decisões assertivas, planos de ação e crescimento real da equipe.",
     },
     {
-      title: "Pesquisas de Clima",
-      description: "Entenda o que sua equipe sente antes de perdê-la.",
+      title: "Pesquisa de Clima e Engajamento",
+      description: "Diagnósticos precisos para entender percepções, fortalecer cultura e reduzir riscos de perda de talentos.\nAntecipe problemas, aumente o engajamento e construa um ambiente organizacional saudável e produtivo.",
     },
     {
-      title: "Indicadores",
-      description: "Tenha o controle e a praticidade das informações.",
+      title: "Sistema e Tecnologia de RH",
+      description: "Plataforma para gestão de pessoas. Automatize ferramentas, acompanhe indicadores estratégicos e tenha controle das informações para decisões mais seguras e estruturadas",
     },
     {
-      title: "Implementação Assistida",
+      title: "Treinamentos e Mentoria para Líderes",
       description:
-        "Não entregamos apenas o acesso; nós configuramos e treinamos seu time para garantir resultados.",
+        "Formação estratégica para líderes que precisam evoluir e gerar resultados. Desenvolvemos competências essenciais como comunicação, gestão de desempenho, feedback e avaliações, inteligência emocional e liderança multiplicadora.",
     },
   ];
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import heroIllustration from "../../assets/images/a.png";
 import introVideo from "../../assets/images/intro.mp4";
 import Button from "../Atoms/Button";
@@ -35,8 +35,7 @@ const HeroSection: React.FC = () => {
             <AnimatedHeroTitle />
 
             <p className="mt-6 text-lg leading-relaxed text-white font-bold drop-shadow-lg">
-              Sistema de Gestão de RH completo para sua empresa e formamos
-              líderes de alta performance para conduzir o seu crescimento
+            Sistema completo de Gestão Empresarial, com formações e mentorias para desenvolver líderes, e ferramentas e processos para impulsionar empresas que desejam crescer com estrutura, estratégia e alta performance.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">

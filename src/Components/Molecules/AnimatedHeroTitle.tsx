@@ -9,7 +9,7 @@ const AnimatedHeroTitle: React.FC = () => {
         <TypeAnimation
           sequence={[
             1000,
-            "Do RH operacional à Gestão Estratégica: Tecnologia e Liderança para escalar sua empresa.",
+            "Do RH operacional à gestão estratégica",
           ]}
           wrapper="span"
           speed={50}
